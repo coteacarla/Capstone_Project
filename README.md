@@ -113,14 +113,6 @@ The notebooks contain the project experiments and training work:
 
 The training functions in `backend_cnn.py` and `backend_hybrid.py` are present for experimentation, but the API loads the saved model artifacts instead of retraining at startup.
 
-## Current Limitations
-
-- The demo is focused on MNIST digits `0` and `1`, not general ten-class recognition across every model.
-- `backend_apis.py` saves uploaded files using the client-provided filename and does not remove them afterward; this is suitable for local experimentation, not production deployment.
-- `/predict` is a placeholder and does not classify the uploaded request.
-- The simpler `frontend.html` and `frontend.js` currently use inconsistent element IDs (`paintCanvas`/`canvas` and `clearBtn`/`clearCanvas`). Use `trial.html` for the intended end-to-end interface, or align those IDs before using the simpler page.
-- The Flask server runs with `debug=True`, which should not be used in production.
-
 ## License
 
 See [LICENSE.md](LICENSE.md).
